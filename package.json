@@ -1,0 +1,26 @@
+{
+  "name": "big-insta-pic",
+  "version": "0.0.0",
+  "description": "a web app that let's you post a big square in instagram",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aditya2272sharma/big-insta-pic"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
