@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var imageProcessor = require('./controllers/imageUpload');
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -10,7 +11,8 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.send('hello world');
+  imageProcessor();
+  response.render('pages/index');
 });
 
 app.listen(app.get('port'), function() {
